@@ -60,6 +60,7 @@ if __name__ =='__main__':
         bot.loop.run_until_complete(runner.setup())
         site = web.TCPSite(runner,host='0.0.0.0',port=80)
         bot.loop.run_until_complete(site.start())
+        print('Server File Runing!')
         bot.loop.run_forever()
     threading.Thread(target=run_web).start()
     bot = ObigramClient(BOT_TOKEN,API_ID,API_HASH)
