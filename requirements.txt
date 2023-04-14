@@ -1,2 +1,3 @@
 https://github.com/ObisoftDev/pyobigram/archive/master.zip
 aiohttp
+multidict
