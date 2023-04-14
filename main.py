@@ -45,7 +45,7 @@ async def get_file(request):
         return web.Response(status=206 if offset else 200,body=stream['body'],headers=headers)
     return web.Response(text='404 NOT FOUND')
 
-ADMINS = ['Genoskuncyborg']
+ADMINS = ['Genoskuncyborg','obisoftt']
 
 def onmessage(update,bot:ObigramClient):
     global ADMINS
